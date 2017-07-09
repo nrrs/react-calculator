@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+#calculator-container {
+  border: 10px solid #dfdfdf;
+  max-width: 720px;
+  margin: 0 auto;
+  h2 {
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    span {
+      text-align: right;
+    }
+  }
+  div.row {
+    padding: 10px;
+    display: flex;
+    input {
+      font-size: 32px;
+      flex:1;
+    }
+    button {
+      flex: 1;
+      background: transparent;
+      padding: 10px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+}

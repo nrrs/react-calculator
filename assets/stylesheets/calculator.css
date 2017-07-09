@@ -1,0 +1,40 @@
+/* line 1, ../sass/calculator.scss */
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* line 5, ../sass/calculator.scss */
+#calculator-container {
+  border: 10px solid #dfdfdf;
+  max-width: 720px;
+  margin: 0 auto;
+}
+/* line 9, ../sass/calculator.scss */
+#calculator-container h2 {
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: left;
+}
+/* line 13, ../sass/calculator.scss */
+#calculator-container h2 span {
+  text-align: right;
+}
+/* line 17, ../sass/calculator.scss */
+#calculator-container div.row {
+  padding: 10px;
+  display: flex;
+}
+/* line 20, ../sass/calculator.scss */
+#calculator-container div.row input {
+  font-size: 32px;
+  flex: 1;
+}
+/* line 24, ../sass/calculator.scss */
+#calculator-container div.row button {
+  flex: 1;
+  background: transparent;
+  padding: 10px;
+  font-size: 32px;
+  line-height: 32px;
+}

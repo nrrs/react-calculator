@@ -33,35 +33,30 @@ export default class Calculator extends React.Component {
   add(e) {
     e.preventDefault();
     const result = parseInt(this.state.num1) + parseInt(this.state.num2);
-    console.log(result);
     this.setState({ result });
   }
 
   subtract(e) {
     e.preventDefault();
     const result = parseInt(this.state.num1) - parseInt(this.state.num2);
-    console.log(result);
     this.setState({ result });
   }
 
   multiply(e) {
     e.preventDefault();
     const result = parseInt(this.state.num1) * parseInt(this.state.num2);
-    console.log(result);
     this.setState({ result });
   }
 
   divide(e) {
     e.preventDefault();
     const result = parseInt(this.state.num1) / parseInt(this.state.num2);
-    console.log(result);
     this.setState({ result });
   }
 
   power(e) {
     e.preventDefault();
     const result = parseInt(this.state.num1) ** parseInt(this.state.num2);
-    console.log(result);
     this.setState({ result });
   }
 
@@ -72,18 +67,18 @@ export default class Calculator extends React.Component {
         <h2>num2: {this.state.num2}</h2>
         <h2>Result: {this.state.result}</h2>
 
-        <div>
+        <div className="row">
           <input onChange={this.setNum1} value={this.state.num1} />
           <input onChange={this.setNum2} value={this.state.num2} />
-          <button onClick={this.clear}>clear</button>
         </div>
 
-        <div>
-          <button onClick={this.add}>+</button>
-          <button onClick={this.subtract}>-</button>
-          <button onClick={this.multiply}>*</button>
-          <button onClick={this.divide}>/</button>
-          <button onClick={this.power}>**</button>
+        <div className="row">
+          <button onClick={this.clear}>clear</button>
+          <button onClick={this.add}><span>+</span></button>
+          <button onClick={this.subtract}><span>-</span></button>
+          <button onClick={this.multiply}><span>*</span></button>
+          <button onClick={this.divide}><span>/</span></button>
+          <button onClick={this.power}><span>**</span></button>
         </div>
       </div>
     );
